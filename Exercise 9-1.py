@@ -1,11 +1,9 @@
-fname = raw_input('Enter file name: ')
-try:
-	fhandle = open(fname)
-except:
-	print 'File cannot be opened:', fname
-	exit()
+"The file to be checked is here--https://www.py4e.com/code3/words.txt"
+
+
+inp=open('words')
 words = dict()
-ftext = fhandle.read()
+ftext = inp.read()
 wordlist = ftext.split()
 for word in wordlist:
 	words[word] = 0
